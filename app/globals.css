@@ -33,6 +33,12 @@ body {
   font-family: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
     'Meiryo', sans-serif;
   -webkit-font-smoothing: antialiased;
+  /* Prevent double-tap zoom on interactive elements */
+  touch-action: manipulation;
+}
+
+button, a, [role="button"] {
+  touch-action: manipulation;
 }
 
 /* ── Leaflet overrides ───────────────────────────────────────── */
@@ -68,6 +74,15 @@ body {
   height: 32px !important;
   line-height: 32px !important;
   font-size: 16px !important;
+}
+
+@media (max-width: 600px) {
+  .leaflet-control-zoom a {
+    width: 44px !important;
+    height: 44px !important;
+    line-height: 44px !important;
+    font-size: 20px !important;
+  }
 }
 
 .leaflet-control-zoom a:last-child {

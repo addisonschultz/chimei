@@ -26,6 +26,29 @@
   transition: background 0.12s, border-color 0.12s;
   text-align: left;
   width: 100%;
+  min-height: 36px;
+}
+
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .btn {
+    flex: 1;
+    justify-content: center;
+    padding: 8px 6px;
+    min-height: 44px;
+  }
+
+  .label {
+    font-size: 11px;
+  }
+
+  .legend {
+    display: none;
+  }
 }
 
 .btn:hover {

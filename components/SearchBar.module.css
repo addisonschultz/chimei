@@ -26,6 +26,15 @@
   transition: border-color 0.15s, box-shadow 0.15s;
   appearance: none;
   box-shadow: var(--shadow);
+  touch-action: manipulation;
+}
+
+@media (max-width: 600px) {
+  .input {
+    /* 16px minimum prevents iOS Safari from zooming on focus */
+    font-size: 16px;
+    padding: 11px 38px 11px 38px;
+  }
 }
 
 .input::placeholder {
