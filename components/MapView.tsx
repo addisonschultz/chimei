@@ -61,8 +61,9 @@ export default function MapView({ places, selected, onSelect, query }: Props) {
       const map = L.map(containerRef.current, {
         center: TOKYO,
         zoom: ZOOM,
-        zoomControl: true,
+        zoomControl: false,
       });
+      L.control.zoom({ position: 'bottomright' }).addTo(map);
       mapRef.current = map;
 
       L.tileLayer(
@@ -243,8 +244,14 @@ export default function MapView({ places, selected, onSelect, query }: Props) {
       layer.bringToBack();
       boundaryLayerRef.current = layer;
 
-      // Fit the map to the full boundary extent
-      mapRef.current.flyToBounds(layer.getBounds(), {
+      // For Tokyo city, OSM bounds include remote islands (~1000km south).
+      // Use a hardcoded mainland-only box instead.
+      const fitBounds =
+        place.type === 'city'
+          ? L.latLngBounds([[35.52, 139.45], [35.90, 139.93]])
+          : layer.getBounds();
+
+      mapRef.current.flyToBounds(fitBounds, {
         padding: [50, 50],
         maxZoom: 16,
         duration: 0.8,

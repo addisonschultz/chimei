@@ -16,13 +16,13 @@
   display: block;
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
+  color: #1a1a2e;
   line-height: 1.2;
 }
 
 .tooltipRomaji {
   display: block;
   font-size: 10px;
-  color: #9191aa;
+  color: #6b7280;
   letter-spacing: 0.06em;
 }
