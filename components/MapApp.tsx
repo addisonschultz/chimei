@@ -7,6 +7,7 @@ import MapView from './MapView';
 import InfoPanel from './InfoPanel';
 import SearchBar from './SearchBar';
 import FilterButtons from './FilterButtons';
+import AboutModal from './AboutModal';
 import styles from './MapApp.module.css';
 
 export type FilterType = 'all' | 'city' | 'ward' | 'neighborhood';
@@ -15,6 +16,7 @@ export default function MapApp() {
   const [selected, setSelected] = useState<Place | null>(null);
   const [filter, setFilter] = useState<FilterType>('all');
   const [query, setQuery] = useState('');
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -39,6 +41,13 @@ export default function MapApp() {
             <span className={styles.logoRomaji}>Chimei</span>
           </div>
           <p className={styles.subtitle}>Tokyo Place Names</p>
+          <button
+            className={styles.infoBtn}
+            onClick={() => setAboutOpen(true)}
+            aria-label="About"
+          >
+            <InfoIcon />
+          </button>
         </header>
         <SearchBar value={query} onChange={setQuery} />
         <FilterButtons
@@ -58,6 +67,17 @@ export default function MapApp() {
       />
 
       <InfoPanel place={selected} onClose={() => setSelected(null)} />
+      {aboutOpen && <AboutModal onClose={() => setAboutOpen(false)} />}
     </div>
+  );
+}
+
+function InfoIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <circle cx="10" cy="10" r="8.5" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M10 9v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <circle cx="10" cy="6.5" r="0.75" fill="currentColor" />
+    </svg>
   );
 }

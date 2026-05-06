@@ -1,0 +1,227 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  animation: fadeIn 0.15s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.sheet {
+  position: relative;
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 28px 24px 24px;
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: slideUp 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(8px); opacity: 0; }
+  to   { transform: translateY(0);   opacity: 1; }
+}
+
+/* ── Close ───────────────────────────────────────────────────── */
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 13px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.12s, background 0.12s;
+  touch-action: manipulation;
+}
+
+.close:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+/* ── Logo ────────────────────────────────────────────────────── */
+
+.logoRow {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+}
+
+.kanji {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ward-color);
+  letter-spacing: 0.05em;
+}
+
+.romaji {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ── Description ─────────────────────────────────────────────── */
+
+.description {
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(26, 26, 46, 0.72);
+}
+
+/* ── Divider ─────────────────────────────────────────────────── */
+
+.divider {
+  height: 1px;
+  background: var(--border);
+}
+
+/* ── Made by ─────────────────────────────────────────────────── */
+
+.madeBy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  width: fit-content;
+  transition: color 0.12s;
+}
+
+.link:hover {
+  color: var(--ward-color);
+}
+
+/* ── Brill ───────────────────────────────────────────────────── */
+
+.brill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  text-decoration: none;
+  transition: background 0.12s, border-color 0.12s;
+  touch-action: manipulation;
+}
+
+.brill:hover {
+  background: #efede7;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.brillText {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.brillTitle {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.brillSub {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.brillArrow {
+  font-size: 16px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: transform 0.12s;
+}
+
+.brill:hover .brillArrow {
+  transform: translateX(2px);
+}
+
+/* ── Mobile ──────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .backdrop {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .sheet {
+    max-width: 100%;
+    border-radius: 16px 16px 0 0;
+    padding: 28px 20px max(24px, env(safe-area-inset-bottom));
+    animation: slideUpMobile 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .sheet::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+  }
+
+  @keyframes slideUpMobile {
+    from { transform: translateY(100%); }
+    to   { transform: translateY(0); }
+  }
+
+  .close {
+    width: 44px;
+    height: 44px;
+  }
+}
