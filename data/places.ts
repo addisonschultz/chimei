@@ -639,9 +639,9 @@ const places: Place[] = [
     ward: '世田谷区',
   },
   {
-    id: 'kamima',
+    id: 'kamiuma',
     kanji: '上馬',
-    romaji: 'Kamima',
+    romaji: 'Kamiuma',
     english: 'Upper Horse',
     type: 'neighborhood',
     coordinates: [35.6371947, 139.6632862],
