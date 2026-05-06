@@ -1,0 +1,119 @@
+.wrap {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+  text-align: left;
+  width: 100%;
+}
+
+.btn:hover {
+  background: var(--surface-2);
+}
+
+.kanji {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-muted);
+  width: 20px;
+  text-align: center;
+  transition: color 0.12s;
+}
+
+.label {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: color 0.12s;
+}
+
+/* ── Active states ───────────────────────────────────────────── */
+
+.btn.active.all {
+  background: var(--surface-2);
+  border-color: var(--border);
+}
+.btn.active.all .kanji,
+.btn.active.all .label {
+  color: var(--text);
+}
+
+.btn.active.city {
+  background: rgba(15, 23, 42, 0.06);
+  border-color: rgba(15, 23, 42, 0.15);
+}
+.btn.active.city .kanji,
+.btn.active.city .label {
+  color: var(--city-color);
+}
+
+.btn.active.ward {
+  background: rgba(29, 78, 216, 0.07);
+  border-color: rgba(29, 78, 216, 0.18);
+}
+.btn.active.ward .kanji,
+.btn.active.ward .label {
+  color: var(--ward-color);
+}
+
+.btn.active.neighborhood {
+  background: rgba(185, 28, 28, 0.07);
+  border-color: rgba(185, 28, 28, 0.18);
+}
+.btn.active.neighborhood .kanji,
+.btn.active.neighborhood .label {
+  color: var(--neighborhood-color);
+}
+
+/* ── Legend ──────────────────────────────────────────────────── */
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px 2px;
+  border-top: 1px solid var(--border);
+  margin-top: 4px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.7);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+  flex-shrink: 0;
+}
+
+.legendText {
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}

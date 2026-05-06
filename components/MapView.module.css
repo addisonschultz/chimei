@@ -1,0 +1,28 @@
+.map {
+  flex: 1;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.tooltip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.tooltipKanji {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.tooltipRomaji {
+  display: block;
+  font-size: 10px;
+  color: #9191aa;
+  letter-spacing: 0.06em;
+}

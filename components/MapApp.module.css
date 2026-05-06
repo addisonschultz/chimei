@@ -1,0 +1,84 @@
+.root {
+  position: fixed;
+  inset: 0;
+  display: flex;
+}
+
+/* ── Controls overlay (top-left) ─────────────────────────────── */
+
+.controls {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: var(--controls-z);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 296px;
+  pointer-events: none;
+}
+
+.controls > * {
+  pointer-events: auto;
+}
+
+.header {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 14px 16px 12px;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+}
+
+.logoKanji {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ward-color);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.logoRomaji {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 10.5px;
+  color: var(--text-muted);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.count {
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 0 2px;
+}
+
+/* ── Mobile ──────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .controls {
+    width: calc(100vw - 32px);
+    top: 10px;
+    left: 12px;
+  }
+
+  .logoKanji {
+    font-size: 21px;
+  }
+
+  .logoRomaji {
+    font-size: 14px;
+  }
+}
