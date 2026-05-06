@@ -1732,6 +1732,824 @@ const places: Place[] = [
       '落合 in Shinjuku means "confluence" — 落 (to fall, to flow) + 合 (to meet, to join). The Kanda River and Myōshōji River converge near this neighborhood, creating a natural meeting point of flowing waters. The area was home to many Western-style painters in the Taisho era (1912–1926), drawn to the picturesque river valley and its still-rural character at the edge of the expanding metropolis. The Ochiai dyeing district, famous for its cloth-dyeing operations using the pure river water, operated here through the early 20th century.',
     ward: '新宿区',
   },
+
+  // ─── New Neighborhoods ───────────────────────────────────────────────────────
+
+  // MINATO-KU
+  {
+    id: 'azabu-juban',
+    kanji: '麻布十番',
+    romaji: 'Azabu-Jūban',
+    english: 'Hemp Cloth Tenth Section',
+    type: 'neighborhood',
+    coordinates: [35.6551, 139.738],
+    description:
+      '麻布十番 combines 麻布 (asa = hemp, nuno = cloth — hemp was historically grown or traded here) with 十番 (the "tenth section" of the old Azabu district). The neighborhood sits in a valley between Roppongi and Mita, and its old-fashioned covered shotengai shopping street survived when surrounding areas were redeveloped. Now one of Minato\'s most beloved locals\' neighborhoods, home to generations-old confectioners, the Nanbu-senbei crackers stall, and a lively late-night food scene.',
+    ward: '港区',
+  },
+  {
+    id: 'shiba',
+    kanji: '芝',
+    romaji: 'Shiba',
+    english: 'Turf',
+    type: 'neighborhood',
+    coordinates: [35.6461, 139.7477],
+    description:
+      '芝 simply means "turf," "lawn," or "grass." One of the oldest place names in what is now Tokyo, appearing in records from the Kamakura period. The name evokes the grassy coastal lowland stretching along the inner shore of Edo Bay. At its heart stands Zōjō-ji, the great Jōdo-sect temple that served as the official funerary temple of the Tokugawa shogunate — six of the fifteen shoguns are buried within its grounds. Tokyo Tower, built 1958, now looms above the temple\'s great red gate.',
+    ward: '港区',
+  },
+  {
+    id: 'shinbashi',
+    kanji: '新橋',
+    romaji: 'Shinbashi',
+    english: 'New Bridge',
+    type: 'neighborhood',
+    coordinates: [35.6658, 139.7584],
+    description:
+      '新橋 means "new bridge" — 新 (new) + 橋 (bridge). A bridge was built over the Shiodome River in the Edo period, newer than an existing crossing nearby, and the settlement around it took its name from this "new bridge." In 1872, Shinbashi became the terminal of Japan\'s very first railway line, running to Yokohama — a historic milestone marked by a replica steam locomotive displayed at the station plaza today. The area has long been synonymous with the after-work salaryman culture of izakaya and standing bars.',
+    ward: '港区',
+  },
+  {
+    id: 'hamamatsucho',
+    kanji: '浜松町',
+    romaji: 'Hamamatsuchō',
+    english: 'Hamamatsu Town',
+    type: 'neighborhood',
+    coordinates: [35.6553, 139.7572],
+    description:
+      '浜松町 means "Hamamatsu Town" — 浜松 (beach pine, also the name of a city in Shizuoka) + 町 (town). Craftsmen from the Enshu Hamamatsu domain are said to have settled here during the Edo period, lending their home city\'s name to the district. The Hamarikyū Gardens — a former shogunal duck-hunting preserve with a tidal pond and tea house — occupy its southern edge. Today the area is the Tokyo Monorail\'s mainland terminus, the gateway to Haneda Airport.',
+    ward: '港区',
+  },
+  {
+    id: 'mita',
+    kanji: '三田',
+    romaji: 'Mita',
+    english: 'Three Fields',
+    type: 'neighborhood',
+    coordinates: [35.6441, 139.7393],
+    description:
+      '三田 combines 三 (three) + 田 (rice paddies). One theory holds that three distinct paddies were cultivated here on the upland plateau; another traces the name to an ancient clan. The neighborhood is defined by Keiō University, founded 1858 by Fukuzawa Yukichi — Japan\'s foremost Meiji-era educator and the face on the 10,000-yen note — whose main campus has occupied this hill since 1871. The juxtaposition of a top-ranked private university with quiet, orderly residential streets gives Mita its distinctive character.',
+    ward: '港区',
+  },
+  {
+    id: 'shibaura',
+    kanji: '芝浦',
+    romaji: 'Shibaura',
+    english: 'Turf Shore',
+    type: 'neighborhood',
+    coordinates: [35.6462, 139.7489],
+    description:
+      '芝浦 pairs 芝 (turf, grass — the adjacent Shiba district) with 浦 (bay shore, inlet). The grassy shoreline reclaimed from the inner arc of Tokyo Bay describes its origin precisely. Through the 20th century it was an industrial waterfront of warehouses, factories, and working docks. Since the 1990s it has transformed dramatically: luxury apartment towers, the Shibaura House cultural space, and canal-side cafes now define the Minato Ward waterfront, though a few traditional izakaya tucked under elevated expressways preserve traces of its laboring past.',
+    ward: '港区',
+  },
+
+  // SHIBUYA-KU
+  {
+    id: 'hiroo',
+    kanji: '広尾',
+    romaji: 'Hiroo',
+    english: 'Wide Tail',
+    type: 'neighborhood',
+    coordinates: [35.6498, 139.7237],
+    description:
+      '広尾 combines 広 (wide, broad) + 尾 (tail, end, ridge-tip). The "broad tail-end of the upland" describes the wide lowland at the terminus of the plateau ridge running through Shibuya. Today Hiroo is one of Tokyo\'s most upscale residential pockets, home to more than thirty foreign embassies, expensive supermarkets catering to the international community, and the tranquil grounds of the National Azabu and Hiroo international schools. The quiet tree-lined streets feel distinctly unlike the rest of the metropolis.',
+    ward: '渋谷区',
+  },
+  {
+    id: 'tomigaya',
+    kanji: '富ヶ谷',
+    romaji: 'Tomigaya',
+    english: 'Wealth Valley',
+    type: 'neighborhood',
+    coordinates: [35.672, 139.6929],
+    description:
+      '富ヶ谷 means "wealth valley" or "abundance valley" — 富 (wealth, abundance, fertility) + ヶ谷 (valley). The small valley here was presumably productive farmland, earning the optimistic "wealthy" epithet. Bordering Yoyogi Park on the west side of Shibuya, Tomigaya has evolved into one of Tokyo\'s most coveted café and boutique neighborhoods — a low-key, fashion-forward enclave favored by creative professionals who find Daikanyama too crowded and Harajuku too loud.',
+    ward: '渋谷区',
+  },
+  {
+    id: 'dogenzaka',
+    kanji: '道玄坂',
+    romaji: 'Dōgenzaka',
+    english: 'Dōgen\'s Slope',
+    type: 'neighborhood',
+    coordinates: [35.6599, 139.6989],
+    description:
+      '道玄坂 pairs 道玄 (a person\'s name) + 坂 (slope, hill). Dōgen is said to have been either a local outlaw-turned-hermit or a masterless samurai who had a dwelling on this hill during the Muromachi period. The name stuck through centuries of change. Today the steep slope running southwest from Shibuya Station is lined with izakaya, live music venues, love hotels, and ramen shops — a crowded, neon-lit landscape that concentrates much of Shibuya\'s most energetic nightlife.',
+    ward: '渋谷区',
+  },
+
+  // SHINJUKU-KU
+  {
+    id: 'takadanobaba',
+    kanji: '高田馬場',
+    romaji: 'Takadanobaba',
+    english: 'Takada Horse Track',
+    type: 'neighborhood',
+    coordinates: [35.7126, 139.7032],
+    description:
+      '高田馬場 joins 高田 (Takada, a place name meaning "high rice paddy") + 馬場 (yabusame / equestrian archery range). Shogunal horseback archery displays (yabusame) were staged here in the Edo period, giving the area its enduring name. The neighborhood is steeped in popular culture: it is set near the scene of the famous 1694 duel of the 47 Ronin (Horibe Yasubei\'s revenge fight). Today it is a quintessential student neighborhood, home to Waseda University\'s north campus and dense with cheap ramen shops, used bookstores, and arcade centers.',
+    ward: '新宿区',
+  },
+  {
+    id: 'shin-okubo',
+    kanji: '新大久保',
+    romaji: 'Shin-Ōkubo',
+    english: 'New Great Long-Cherished',
+    type: 'neighborhood',
+    coordinates: [35.7068, 139.6971],
+    description:
+      '新大久保 means "New Ōkubo" — 新 (new) + 大久保 (Ōkubo, combining 大 = great, 久 = long-enduring, 保 = to keep, cherish — a place name invoking lasting prosperity). It developed as a northern extension of the older Ōkubo district in the Meiji era. By the 1990s, Korean residents and restaurants began clustering here, and the neighborhood has since become Tokyo\'s most vibrant "Koreatown." The main street is lined with Korean barbecue restaurants, K-pop merchandise shops, and cosmetics stores serving a constant stream of fans and food tourists.',
+    ward: '新宿区',
+  },
+  {
+    id: 'nakai',
+    kanji: '中井',
+    romaji: 'Nakai',
+    english: 'Middle Well',
+    type: 'neighborhood',
+    coordinates: [35.7116, 139.6854],
+    description:
+      '中井 combines 中 (middle, inside) + 井 (well). A well in the middle of this district was a valuable local landmark; the settlement grew around it. Nakai is a quiet residential neighborhood on the Seibu Shinjuku line — decidedly unhurried compared to its proximity to Shinjuku. The Ochiai neighborhood\'s cloth-dyeing legacy extended here, and several traditional dyeworks (some still operating) used the local waterways. A small but genuine shitamachi feel persists in the covered shotengai.',
+    ward: '新宿区',
+  },
+
+  // TOSHIMA-KU
+  {
+    id: 'mejiro',
+    kanji: '目白',
+    romaji: 'Mejiro',
+    english: 'White Eye',
+    type: 'neighborhood',
+    coordinates: [35.7213, 139.7071],
+    description:
+      '目白 means "white eye" — 目 (eye) + 白 (white). It forms a directional pair with neighboring Meguro (目黒, "black eye"), and both names are thought to derive from the Fudō Myōō statues at local temples: the Mejiro Fudō enshrined a white-eyed statue, the Meguro Fudō a black-eyed one. The neighborhood is associated with Gakushūin University, originally an imperial school for the nobility, whose campus dominates a large wooded hill. Leafy streets, upscale residences, and a genteel quietude characterize the area.',
+    ward: '豊島区',
+  },
+  {
+    id: 'higashi-nagasaki',
+    kanji: '東長崎',
+    romaji: 'Higashi-Nagasaki',
+    english: 'East Long Cape',
+    type: 'neighborhood',
+    coordinates: [35.7239, 139.6741],
+    description:
+      '東長崎 means "East Nagasaki" — 東 (east) + 長崎 (long headland: 長 = long, 崎 = cape or promontory). The Nagasaki portion describes the long finger of elevated land extending in this direction — the same topographic feature named the famous port city in Kyushu. A quiet residential area on the Seibu Ikebukuro line west of Ikebukuro, it has maintained a neighborhood feel largely unaffected by the commercial intensity of the station hub nearby.',
+    ward: '豊島区',
+  },
+
+  // SUMIDA-KU
+  {
+    id: 'ryogoku',
+    kanji: '両国',
+    romaji: 'Ryōgoku',
+    english: 'Both Provinces',
+    type: 'neighborhood',
+    coordinates: [35.6973, 139.7935],
+    description:
+      '両国 means "both provinces" — 両 (both) + 国 (provinces). The great Ryōgoku Bridge, built in 1661, spanned the Sumida River at the boundary between Musashi Province (west, present-day Tokyo) and Shimōsa Province (east, present-day Chiba), hence "bridge of two provinces." The area became Edo\'s most famous entertainment district: sumo tournaments, misemono (freak shows), fortune tellers, and food stalls packed the wide open space on the western bank. The Kokugikan sumo hall still stands here, and the Edo-Tokyo Museum preserves the neighborhood\'s memory.',
+    ward: '墨田区',
+  },
+  {
+    id: 'hikifune',
+    kanji: '曳舟',
+    romaji: 'Hikifune',
+    english: 'Towboat',
+    type: 'neighborhood',
+    coordinates: [35.7215, 139.8131],
+    description:
+      '曳舟 means "towboat" or "hauled boat" — 曳 (to tow, to drag) + 舟 (boat). Before railways, boatmen would physically tow flat-bottomed boats (takasebune) through the shallow canals here using ropes, ferrying passengers and goods between the northern Musashino Plain and Edo. The neighborhood retains a classic shitamachi character: a covered shopping street, old sento bathhouses, and low-rise wooden buildings survive amid gradual modernization. The Tōbu Skytree Line connects it quickly to Asakusa.',
+    ward: '墨田区',
+  },
+
+  // KŌTŌ-KU
+  {
+    id: 'toyosu',
+    kanji: '豊洲',
+    romaji: 'Toyosu',
+    english: 'Abundant Isle',
+    type: 'neighborhood',
+    coordinates: [35.6451, 139.7952],
+    description:
+      '豊洲 combines 豊 (abundant, fertile, rich) + 洲 (sandbar, island, shoal). The area was reclaimed from Tokyo Bay in multiple phases through the 20th century — the aspirational "abundant isle" name was assigned to this engineered land by planners who intended it for industry. Today it is home to the Toyosu Market, which replaced the old Tsukiji inner wholesale fish market in 2018 and handles some of the world\'s largest volumes of tuna and seafood. Luxury apartments, the teamLab Planets digital art museum, and the Lalaport shopping complex have turned it into a sought-after residential zone.',
+    ward: '江東区',
+  },
+  {
+    id: 'fukagawa',
+    kanji: '深川',
+    romaji: 'Fukagawa',
+    english: 'Deep River',
+    type: 'neighborhood',
+    coordinates: [35.6737, 139.803],
+    description:
+      '深川 means "deep river" — 深 (deep) + 川 (river). The name is attributed to Fukagawa Hachirōemon, a man from Osaka who is said to have been the first settler to reclaim and develop this reed-covered river delta at the mouth of the Sumida River in the early Edo period. The area became a prosperous merchant district and the spiritual heart of Edo\'s eastern lowlands, home to Tomioka Hachimangū (Edo\'s largest Hachiman shrine) and the Fukagawa Fudō. Fukagawa-meshi — clam and rice simmered in miso broth — is its iconic dish.',
+    ward: '江東区',
+  },
+  {
+    id: 'shinonome',
+    kanji: '東雲',
+    romaji: 'Shinonome',
+    english: 'Dawn Light',
+    type: 'neighborhood',
+    coordinates: [35.6438, 139.8074],
+    description:
+      '東雲 is written with the characters 東 (east) + 雲 (cloud) but read shinonome, an ancient word for the pale predawn light on the eastern horizon — the sky just before sunrise. The characters were chosen as a poetic, aspirational name when this reclaimed waterfront district was developed in the 1990s, suggesting brightness and promise rising from Tokyo Bay. The neighborhood is largely made up of large-scale residential towers, with the Canal Court complex — a notable piece of collaborative architecture by six prominent Japanese architects — serving as its centerpiece.',
+    ward: '江東区',
+  },
+  {
+    id: 'shin-kiba',
+    kanji: '新木場',
+    romaji: 'Shin-Kiba',
+    english: 'New Lumber Yard',
+    type: 'neighborhood',
+    coordinates: [35.6446, 139.8247],
+    description:
+      '新木場 means "new lumber yard" — 新 (new) + 木場 (timber yard: 木 = wood, 場 = place). In the 1960s and 1970s, the timber industry was relocated from the historic Kiba lumber district (further inland) to newly reclaimed land on the bay shore, forming a "new" wood-processing zone. The smell of fresh-cut timber once pervaded the area. Today most of the wood industry has dispersed, and the site hosts Zepp Tokyo concert venue, the outdoor music festival grounds of Ultra Japan, and a growing cluster of creative and entertainment businesses.',
+    ward: '江東区',
+  },
+  {
+    id: 'tatsumi',
+    kanji: '辰巳',
+    romaji: 'Tatsumi',
+    english: 'Dragon-Snake Direction',
+    type: 'neighborhood',
+    coordinates: [35.6388, 139.8149],
+    description:
+      '辰巳 uses two zodiac signs — 辰 (dragon, 5th sign, east-southeast) + 巳 (snake, 6th sign, south-southeast) — to indicate the compass direction south-southeast. In Edo-period geography, this combined direction (辰巳) designated this part of the bay, which lay to the south-southeast of the castle. A celebrated geisha district known as the 辰巳芸者 (Tatsumi geisha) flourished in the nearby Fukagawa area, where the courtesans were famous for their cool, down-to-earth manner distinct from the more formal Yoshiwara style. Today it is a quiet bayfront residential area.',
+    ward: '江東区',
+  },
+
+  // MEGURO-KU
+  {
+    id: 'gakugeidaigaku',
+    kanji: '学芸大学',
+    romaji: 'Gakugeidaigaku',
+    english: 'Arts University',
+    type: 'neighborhood',
+    coordinates: [35.6299, 139.6832],
+    description:
+      '学芸大学 means "arts and sciences university" — 学芸 (academic arts, liberal arts) + 大学 (university). The neighborhood takes its name from the Tokyo Gakugei University (Teacher\'s College), which occupied a campus here before relocating to Koganei in western Tokyo in 1964. In a quirk of Tokyo geography, the Tōkyū Tōyoko Line station kept the old university name even after the institution departed — a common Tokyo phenomenon where lost buildings live on in station names. The area is now a relaxed, upscale residential neighborhood popular with young families and known for its independent cafes and bakeries.',
+    ward: '目黒区',
+  },
+  {
+    id: 'kami-meguro',
+    kanji: '上目黒',
+    romaji: 'Kami-Meguro',
+    english: 'Upper Meguro',
+    type: 'neighborhood',
+    coordinates: [35.646, 139.6991],
+    description:
+      '上目黒 means "upper Meguro" — 上 (upper, upstream) + 目黒 (Meguro). The neighborhood occupies the upstream portion of the Meguro River valley, the higher-elevation ground above the old lower settlement. Today it is internationally famous for the Meguro River cherry blossom promenade: in late March, the river\'s entire length through Kami-Meguro becomes a glowing tunnel of pink blossoms, drawing enormous crowds. Boutique coffee shops, independent restaurants, and design studios line the canal banks.',
+    ward: '目黒区',
+  },
+
+  // SETAGAYA-KU
+  {
+    id: 'seijo',
+    kanji: '成城',
+    romaji: 'Seijō',
+    english: 'Achieved City',
+    type: 'neighborhood',
+    coordinates: [35.6361, 139.5895],
+    description:
+      '成城 combines 成 (to become, to achieve) + 城 (castle, walled city). The name was coined in the Taisho era by the Odakyu Electric Railway company, which developed this residential district from farmland as part of a planned "garden city" project. The aspirational name — "a place that achieves the stature of a great city" — was intended to attract wealthy families. It succeeded: Seijo became and remains one of Japan\'s most exclusive residential addresses, home to film directors, authors, and prominent business families. The Seijo University campus and a preserved natural forest add to its quiet prestige.',
+    ward: '世田谷区',
+  },
+  {
+    id: 'taishido',
+    kanji: '太子堂',
+    romaji: 'Taishidō',
+    english: 'Prince Shōtoku\'s Hall',
+    type: 'neighborhood',
+    coordinates: [35.6422, 139.67],
+    description:
+      '太子堂 means "Prince\'s Hall" — 太子 (crown prince, specifically Prince Shōtoku Taishi, 574–622) + 堂 (hall, small temple building). A small temple enshrining Prince Shōtoku — the statesman credited with establishing Buddhism in Japan and authoring its first constitution — gave the district its name. The neighborhood borders Sangenjaya and shares its lively commercial character while retaining more residential calm. A temple still bearing the name Taishidō stands quietly among the backstreets.',
+    ward: '世田谷区',
+  },
+  {
+    id: 'daita',
+    kanji: '代田',
+    romaji: 'Daita',
+    english: 'Substitute Field',
+    type: 'neighborhood',
+    coordinates: [35.6644, 139.6672],
+    description:
+      '代田 combines 代 (generation, era, substitute, proxy) + 田 (rice paddy). One theory holds that rice paddies here were managed as "substitute" or designated landholdings during the Edo period, set aside for domain provisioning. The neighborhood sits adjacent to Shimokitazawa, and while Shimokitazawa attracts the spotlight, Daita provides the quieter residential backdrop — a mix of small houses, narrow streets, and creative tenants drawn here by the affordable rents just one block removed from the famous live-music district.',
+    ward: '世田谷区',
+  },
+  {
+    id: 'wakabayashi',
+    kanji: '若林',
+    romaji: 'Wakabayashi',
+    english: 'Young Grove',
+    type: 'neighborhood',
+    coordinates: [35.6529, 139.664],
+    description:
+      '若林 means "young grove" or "youthful forest" — 若 (young, fresh) + 林 (grove, forest). A grove of young trees once covered this part of the Setagaya uplands. The neighborhood is traversed by the charming Tōkyū Setagaya Line — one of Tokyo\'s smallest and slowest tram-style railway lines, running on a single track through residential streets. Wakabayashi retains a relaxed, local character with traditional shotengai shopping streets, sento bathhouses, and residents who have lived here for generations.',
+    ward: '世田谷区',
+  },
+
+  // OTA-KU
+  {
+    id: 'den-en-chofu',
+    kanji: '田園調布',
+    romaji: "Den'en-Chōfu",
+    english: 'Garden City Chofu',
+    type: 'neighborhood',
+    coordinates: [35.5994, 139.6656],
+    description:
+      '田園調布 joins 田園 (pastoral fields, garden city — 田 = field, 園 = garden) + 調布 (the historic Chofu district, meaning "tribute cloth": 調 = tribute, 布 = cloth). The "田園" prefix was added deliberately in the 1920s when developer Den\'en Toshi Company modeled this project on Ebenezer Howard\'s British Garden City concept. A radiating boulevard layout centered on the train station — like the spokes of a wheel — gives the neighborhood its distinctive plan. Den-en-Chōfu is considered Japan\'s most prestigious residential address, with large homes, tree-lined avenues, and strict building codes that have preserved its spacious, leafy character.',
+    ward: '大田区',
+  },
+  {
+    id: 'haneda',
+    kanji: '羽田',
+    romaji: 'Haneda',
+    english: 'Wing Field',
+    type: 'neighborhood',
+    coordinates: [35.5493, 139.7798],
+    description:
+      '羽田 pairs 羽 (wing, feather) + 田 (rice paddy). The paddies here, shaped by the meandering lower Tama River, may have resembled spread wings from above; alternatively the name describes the "feathered edge" of the river delta. The old village of Haneda was a small fishing settlement on the tidal flats of the inner bay. Tokyo International Airport — officially named Haneda Airport — was built on the reclaimed land from the late 1930s and has expanded to cover the original village\'s territory. The old Haneda Shrine still stands surrounded by the modern terminal complex.',
+    ward: '大田区',
+  },
+  {
+    id: 'magome',
+    kanji: '馬込',
+    romaji: 'Magome',
+    english: 'Horse Enclosure',
+    type: 'neighborhood',
+    coordinates: [35.5963, 139.7116],
+    description:
+      '馬込 means "horse enclosure" — 馬 (horse) + 込 (driven into, enclosed). Horses were corralled or stabled here in the Edo period for relay purposes on the roads running south from the city. In the Taisho era (1912–1926), this hilly southern Ota neighborhood became a celebrated literary colony known as the Baba-Magome Literary Circle (馬込文士村): writers including Akutagawa Ryūnosuke, Uno Kōji, and Murō Saisei lived and corresponded from these quiet hillside lanes. A small literature museum preserves the memory of that artistic community.',
+    ward: '大田区',
+  },
+  {
+    id: 'nishi-kamata',
+    kanji: '西蒲田',
+    romaji: 'Nishi-Kamata',
+    english: 'West Cattail Paddy',
+    type: 'neighborhood',
+    coordinates: [35.5631, 139.7169],
+    description:
+      '西蒲田 means "West Kamata" — 西 (west) + 蒲田 (Kamata, which itself combines 蒲 = gama, the cattail or bulrush plant, + 田 = rice paddy, describing the marshy wetlands of the old Tama River delta). A lively, unpretentious neighborhood centered on a bustling covered shopping arcade, Nishi-Kamata is known for its down-to-earth character, affordable seafood restaurants, and the gritty warmth typical of old working-class Tokyo districts along the Keihin coastal corridor.',
+    ward: '大田区',
+  },
+  {
+    id: 'senzoku-ota',
+    kanji: '洗足',
+    romaji: 'Senzoku',
+    english: 'Foot Washing',
+    type: 'neighborhood',
+    coordinates: [35.5959, 139.7058],
+    description:
+      '洗足 means "washing feet" — 洗 (to wash) + 足 (foot). This Ota-ku Senzoku (洗足) is distinct from the Taito-ku neighborhood of the same reading but different characters (千束 = thousand bundles). Legend holds that Emperor Meiji stopped here to wash his feet in a spring while surveying the route to Yokohama. The spring-fed Senzoku Pond (洗足池) remains a defining neighborhood feature — a surprisingly large and serene body of water with resident ducks, a pavilion, and cherry trees. Katsu Kaishū, the Edo-era naval commissioner who negotiated the bloodless surrender of Edo Castle in 1868, is buried in the grounds of Ikegami-Honmonji nearby.',
+    ward: '大田区',
+  },
+
+  // SHINAGAWA-KU
+  {
+    id: 'kitashinagawa',
+    kanji: '北品川',
+    romaji: 'Kitashinagawa',
+    english: 'North Goods River',
+    type: 'neighborhood',
+    coordinates: [35.6194, 139.7381],
+    description:
+      '北品川 means "North Shinagawa" — 北 (north) + 品川 (Shinagawa). The northern portion of the historic Shinagawa-juku, the first of the 53 post towns on the Tōkaidō road running from Edo to Kyoto. Ironically, the neighborhood named "north Shinagawa" is actually south of Shinagawa Station — a historical quirk caused by the railway being laid through different terrain. The old post town street (旧東海道) survives as a narrow, atmospheric lane lined with traditional shops, a small shrine, and a canal passage that preserves a faint sense of the Edo traveler\'s Japan.',
+    ward: '品川区',
+  },
+  {
+    id: 'oimachi',
+    kanji: '大井町',
+    romaji: 'Ōimachi',
+    english: 'Great Well Town',
+    type: 'neighborhood',
+    coordinates: [35.6074, 139.7314],
+    description:
+      '大井町 combines 大井 (great well — 大 = great, 井 = well) + 町 (town). A large communal well once served as the focal point of this settlement, and the district grew around it. Today Ōimachi is a boisterous commercial hub in southern Shinagawa: the station exits onto a dense covered shotengai packed with chain restaurants, pachinko parlors, and discount stores that make it a lively everyday gathering point for local workers and residents. The Shinagawa Aquarium and Heiwajima district are accessible from here.',
+    ward: '品川区',
+  },
+  {
+    id: 'tennozu',
+    kanji: '天王洲',
+    romaji: 'Tennōzu',
+    english: 'Heavenly King Isle',
+    type: 'neighborhood',
+    coordinates: [35.6278, 139.7456],
+    description:
+      '天王洲 combines 天王 (heavenly king, a title for the deity Gozu Tennō, identified with Susanoo) + 洲 (sandbar, island). The area was named after a Susanoo shrine that once stood on this reclaimed peninsula. After decades as an industrial port zone, Tennōzu Isle was redeveloped in the 1990s as one of Tokyo\'s first "waterfront resort" projects. Today it is a cultural destination: the WHAT Museum displays large-scale contemporary art, the Tennōzu Isle area is home to galleries, the headquarters of several creative companies, and canal-side restaurants accessed by water bus from Hinode Pier.',
+    ward: '品川区',
+  },
+  {
+    id: 'hatanodai',
+    kanji: '旗の台',
+    romaji: 'Hatanodai',
+    english: 'Flag\'s Terrace',
+    type: 'neighborhood',
+    coordinates: [35.5995, 139.7122],
+    description:
+      '旗の台 means "flag\'s terrace" or "banner plateau" — 旗 (flag, banner) + の (possessive) + 台 (elevated ground, terrace). A flag or boundary marker is said to have been planted atop this elevated ground during the Edo period, either by a military commander marking domain boundaries or by an official surveying the Musashino tableland. A quiet residential neighborhood where the Tōkyū Ōimachi and Ikegami lines intersect, Hatanodai is known for its relaxed pace, traditional shopping street, and the Shōwa University Hospital complex.',
+    ward: '品川区',
+  },
+
+  // TAITO-KU
+  {
+    id: 'yanagibashi',
+    kanji: '柳橋',
+    romaji: 'Yanagibashi',
+    english: 'Willow Bridge',
+    type: 'neighborhood',
+    coordinates: [35.6968, 139.7886],
+    description:
+      '柳橋 means "willow bridge" — 柳 (weeping willow) + 橋 (bridge). Weeping willows once draped the banks of the Kanda River where it empties into the Sumida at this point. In the Edo and Meiji periods, Yanagibashi was one of Tokyo\'s most celebrated geisha entertainment quarters, rivaling Yoshiwara in prestige with a more relaxed, riverside elegance. The atmospheric setting — small restaurants and ochaya tea houses facing the canal where pleasure boats moored — made it a favored retreat for wealthy merchants and writers. Though much diminished, a handful of traditional restaurants still line the narrow lanes near the bridge.',
+    ward: '台東区',
+  },
+  {
+    id: 'asakusabashi',
+    kanji: '浅草橋',
+    romaji: 'Asakusabashi',
+    english: 'Asakusa Bridge',
+    type: 'neighborhood',
+    coordinates: [35.6991, 139.7877],
+    description:
+      '浅草橋 combines 浅草 (Asakusa, the great temple district) + 橋 (bridge). The bridge at this point on the Kanda River marked the official approach road leading north from Nihonbashi toward Asakusa\'s Sensō-ji temple — crossing here was to pass from the commercial heart of Edo toward its spiritual center. Today the neighborhood is Tokyo\'s wholesale district for traditional crafts, festival supplies, and decorative goods: shops specializing in Japanese dolls (ningyo), festival lanterns, kanzashi hairpins, hand-painted fans, and craft materials fill the streets between the station and the river.',
+    ward: '台東区',
+  },
+  {
+    id: 'okachimachi',
+    kanji: '御徒町',
+    romaji: 'Okachimachi',
+    english: 'Foot Guard Town',
+    type: 'neighborhood',
+    coordinates: [35.7079, 139.7741],
+    description:
+      '御徒町 means "honorable foot-soldier town" — 御 (honorable, a respectful prefix) + 徒 (foot soldier, one who walks rather than rides) + 町 (town). Low-ranking samurai foot guards (okachi) who served the shogunate were garrisoned in this area during the Edo period. These warriors, ranked below mounted samurai, gave the neighborhood a modest, working-class character that persisted. Today the area under the JR elevated tracks is packed with jewelry and gem dealers, imported goods stalls, and electronic component shops. The Ameyoko outdoor market, running south toward Ueno, is one of Tokyo\'s most energetic shopping streets.',
+    ward: '台東区',
+  },
+  {
+    id: 'uguisudani',
+    kanji: '鶯谷',
+    romaji: 'Uguisudani',
+    english: 'Bush Warbler Valley',
+    type: 'neighborhood',
+    coordinates: [35.7205, 139.7783],
+    description:
+      '鶯谷 means "bush warbler valley" — 鶯 (uguisu, the Japanese bush warbler) + 谷 (valley). The Japanese bush warbler\'s distinctive flute-like spring call once filled the wooded valley beside Ueno Hill, making it a poetic place celebrated in classical literature. The uguisu\'s song is considered one of the classic sounds of spring in Japan. Today Uguisudani is an unusually quiet station stop tucked between Ueno and Nippori — though it is paradoxically known for its concentration of traditional Japanese inns (ryokan) and love hotels, an unlikely neighbor to the adjacent Yanaka Cemetery with its moss-covered graves and ancient cats.',
+    ward: '台東区',
+  },
+
+  // BUNKYO-KU
+  {
+    id: 'myogadani',
+    kanji: '茗荷谷',
+    romaji: 'Myōgadani',
+    english: 'Myoga Ginger Valley',
+    type: 'neighborhood',
+    coordinates: [35.7127, 139.7345],
+    description:
+      '茗荷谷 means "myoga ginger valley" — 茗荷 (myoga, the Japanese ginger plant Zingiber mioga) + 谷 (valley). Wild myoga plants grew abundantly in this moist valley running through the Bunkyo upland. The neighborhoods sits at the edge of the Koishikawa Botanical Garden, Tokyo University\'s famous plant research garden on the grounds of the former shogunal medicinal herb garden (established 1684), where 4,000 plant species grow. Several universities and the Tōkyō Kyōiku Daigaku (now Tsukuba University) gave the area an academic character that remains strong.',
+    ward: '文京区',
+  },
+  {
+    id: 'suidobashi',
+    kanji: '水道橋',
+    romaji: 'Suidōbashi',
+    english: 'Aqueduct Bridge',
+    type: 'neighborhood',
+    coordinates: [35.7019, 139.7527],
+    description:
+      '水道橋 means "aqueduct bridge" — 水道 (waterway, aqueduct) + 橋 (bridge). During the Edo period, the Tokugawa shogunate constructed a wooden aqueduct (kakehi) to carry water from the Kanda River over a valley and into the city\'s distribution system. The bridge supporting this infrastructure gave the neighborhood its name. The Kanda Josui waterworks, one of the world\'s earliest gravity-fed urban water systems, was an engineering marvel of the 17th century. Today the area is dominated by the Tokyo Dome baseball stadium complex, and the surrounding streets fill with Giants fans on game days.',
+    ward: '文京区',
+  },
+  {
+    id: 'sengoku',
+    kanji: '千石',
+    romaji: 'Sengoku',
+    english: 'Thousand Koku',
+    type: 'neighborhood',
+    coordinates: [35.724, 139.7375],
+    description:
+      '千石 means "a thousand koku" — 千 (thousand) + 石 (koku, the traditional unit of rice volume). The koku (approximately 180 liters) was the standard measure for assessing samurai stipends and domain productivity: a domain worth "10,000 koku" could support 10,000 people for a year. The assessed rice yield of this land was rated at 1,000 koku, and the figure became the neighborhood\'s name — a common Edo practice of naming areas after their agricultural assessment. A residential neighborhood today, it sits between Sugamo\'s elderly charm and Komagome\'s quiet streets.',
+    ward: '文京区',
+  },
+  {
+    id: 'honkomagome',
+    kanji: '本駒込',
+    romaji: 'Honkomagome',
+    english: 'Main Horse Enclosure',
+    type: 'neighborhood',
+    coordinates: [35.7316, 139.7481],
+    description:
+      '本駒込 means "main horse enclosure" — 本 (main, original) + 駒 (horse, colt) + 込 (crowded into, penned in). The original horse paddock or stabling facility for the area was located here, and the "main" (本) prefix distinguished it from secondary horse yards in nearby neighborhoods. Rikugien — one of Edo\'s two greatest feudal garden masterpieces, built in 1702 by Yanagisawa Yoshiyasu for the fifth shogun — is the neighborhood\'s crown jewel. The garden\'s 87 landscape vignettes inspired by classical waka poetry attract particularly large crowds during the illuminated autumn foliage season.',
+    ward: '文京区',
+  },
+
+  // CHIYODA-KU
+  {
+    id: 'ochanomizu',
+    kanji: '御茶ノ水',
+    romaji: 'Ochanomizu',
+    english: 'Honorable Tea Water',
+    type: 'neighborhood',
+    coordinates: [35.6984, 139.7636],
+    description:
+      '御茶ノ水 means "honorable water for tea" — 御 (honorable, polite prefix) + 茶 (tea) + の (possessive) + 水 (water). Shogun Tokugawa Hidetada is said to have had pure spring water drawn from this area to prepare his tea — the exceptional quality of the local water source gave the place its distinguished name. The neighborhood is bisected by a deep gorge cut by the Kanda River, and the two stations perched on either side of this valley give it a dramatic topography unusual for central Tokyo. Today it is known as the center of Tokyo\'s musical instrument trade and home to several universities and hospitals.',
+    ward: '千代田区',
+  },
+  {
+    id: 'hibiya',
+    kanji: '日比谷',
+    romaji: 'Hibiya',
+    english: 'Shellfish Inlet',
+    type: 'neighborhood',
+    coordinates: [35.6747, 139.7577],
+    description:
+      '日比谷 has a disputed etymology. The most likely reading is that 日比 referred to a type of shellfish gathered at tidal flats here, and 谷 (ya) indicated a tidal inlet — "the inlet where 日比 shellfish are gathered." Another theory links it to a local clan. The entire area was once the inner bay of Edo, reclaimed step by step over centuries. In 1903, Hibiya Park was established as Japan\'s first Western-style public park on former army drill grounds. The park remains an open green space between the Imperial Palace moat and the Ginza/Marunouchi commercial belt.',
+    ward: '千代田区',
+  },
+  {
+    id: 'iidabashi',
+    kanji: '飯田橋',
+    romaji: 'Iidabashi',
+    english: 'Iida Bridge',
+    type: 'neighborhood',
+    coordinates: [35.7025, 139.7453],
+    description:
+      '飯田橋 means "Iida Bridge" — 飯田 (Iida, a personal name: 飯 = cooked rice, 田 = field) + 橋 (bridge). The bridge was named after a local official or landowner named Iida who is said to have constructed or managed this crossing over the outer moat of Edo Castle. The neighborhood sits on the northwestern corner of the castle moat system, where several waterways converge. Today it is a major subway interchange where five lines meet, surrounded by publishing companies, law offices, and the Kagurazaka French-Japanese neighborhood to the north.',
+    ward: '千代田区',
+  },
+
+  // CHŪŌ-KU
+  {
+    id: 'tsukiji',
+    kanji: '築地',
+    romaji: 'Tsukiji',
+    english: 'Built Land',
+    type: 'neighborhood',
+    coordinates: [35.6651, 139.772],
+    description:
+      '築地 means "constructed land" or "built-up ground" — 築 (to build up, to bank up earth) + 地 (land, ground). The name directly describes its origin as land reclaimed and elevated from tidal flats of the inner bay, a process that began in the 17th century. The neighborhood is synonymous worldwide with its fish market: the Tsukiji inner wholesale market — the world\'s largest fish and seafood market — operated here from 1935 until its 2018 relocation to Toyosu. The outer market (a lively strip of seafood restaurants, tamagoyaki egg stalls, and kitchen supply shops) remains and still draws enormous crowds for pre-dawn tuna auctions and sushi breakfasts.',
+    ward: '中央区',
+  },
+  {
+    id: 'kyobashi',
+    kanji: '京橋',
+    romaji: 'Kyōbashi',
+    english: 'Capital Bridge',
+    type: 'neighborhood',
+    coordinates: [35.6771, 139.7729],
+    description:
+      '京橋 means "Kyoto Bridge" or "Capital Bridge" — 京 (Kyoto, capital) + 橋 (bridge). The bridge here was the first that travelers from Edo\'s center crossed when setting out westward toward Kyoto on the Tōkaidō road — it marked the psychological beginning of the long journey to the imperial capital. In the Meiji period, Kyobashi became a hub of modernization: Tokyo\'s first brick-paved road (completed 1877) ran through here, and the Ginza brick district expanded northward into Kyobashi. Today it is known for art galleries and the ARTIZON Museum (formerly Bridgestone Museum).',
+    ward: '中央区',
+  },
+  {
+    id: 'ningyocho',
+    kanji: '人形町',
+    romaji: 'Ningyōchō',
+    english: 'Puppet Town',
+    type: 'neighborhood',
+    coordinates: [35.6841, 139.7826],
+    description:
+      '人形町 means "puppet town" or "doll town" — 人形 (puppet, doll: 人 = person, 形 = shape, form) + 町 (town). From the Edo period, this neighborhood in the heart of the old Nihonbashi merchant district was home to puppet (bunraku) theaters, marionette performers, and the craftsmen who made theatrical dolls and props. Karakuri (mechanical puppet) artisans and doll-makers clustered here. Today the area is among the best-preserved of old downtown Tokyo: traditional confectionary shops, lacquerware dealers, a beloved ningyoyaki (doll-shaped sweets) shop, and the historic Amazake Yokocho lane give the neighborhood a strong historical identity.',
+    ward: '中央区',
+  },
+  {
+    id: 'kayabacho',
+    kanji: '茅場町',
+    romaji: 'Kayabachō',
+    english: 'Thatching Grass Town',
+    type: 'neighborhood',
+    coordinates: [35.6803, 139.7802],
+    description:
+      '茅場町 means "thatching-grass field town" — 茅場 (kaya-ba: 茅 = miscanthus or kaya grass used for thatching, 場 = place, field) + 町 (town). Miscanthus and reed grass were harvested here for thatching the roofs of Edo\'s ordinary buildings, a critical industry in a city where most structures were built of wood and thatch. Today Kayabachō is one of central Tokyo\'s main financial districts: the Tokyo Stock Exchange (Kabutocho, immediately adjacent) and the offices of major securities firms and banks fill the area. Narrow backstreets preserve the old district layout beneath modern towers.',
+    ward: '中央区',
+  },
+
+  // ARAKAWA-KU
+  {
+    id: 'nippori',
+    kanji: '日暮里',
+    romaji: 'Nippori',
+    english: 'Dusk Village',
+    type: 'neighborhood',
+    coordinates: [35.7277, 139.771],
+    description:
+      '日暮里 uses the characters 日暮 (sunset, dusk: 日 = sun, 暮 = to grow dark) + 里 (village). The original name was written 新堀 (nip-pori, meaning "new moat"), but the current characters were substituted for their greater poetic beauty — "village of dusk" — without changing the pronunciation, a practice called ateji. The hill here offered celebrated views of Mount Tsukuba and Mount Fuji at sunset, making it a popular excursion spot for Edo townspeople. Today Nippori is known for two very different things: the sprawling Yanaka Cemetery and the Fabric Town shopping street (Nippori Textile Town), Tokyo\'s wholesale center for cloth and sewing supplies.',
+    ward: '荒川区',
+  },
+  {
+    id: 'machiya',
+    kanji: '町屋',
+    romaji: 'Machiya',
+    english: 'Townhouse',
+    type: 'neighborhood',
+    coordinates: [35.736, 139.802],
+    description:
+      '町屋 means "town house" or "shophouse" — 町 (town, urban area) + 屋 (house, shop). A machiya is the traditional combined residence-and-workshop of the Edo-period merchant and artisan class: a narrow building with the commercial space at the street front and living quarters behind, often extending back through multiple rooms into a small garden. The name reflects the neighborhood\'s character as a working-class, craftsman\'s quarter. Along the Tōkyū Arakawa tram line (Toden Arakawa Line, now called the Tokyo Sakura Tram), Machiya retains a shitamachi warmth largely unchanged from the postwar decades.',
+    ward: '荒川区',
+  },
+
+  // KITA-KU
+  {
+    id: 'nishigahara',
+    kanji: '西ヶ原',
+    romaji: 'Nishigahara',
+    english: 'Western Plain',
+    type: 'neighborhood',
+    coordinates: [35.7418, 139.7495],
+    description:
+      '西ヶ原 means "western plain" — 西 (west) + ヶ原 (ga-hara: possessive + plain, open field). The western expanse of the plateau above the lowlands of northern Tokyo gave the area its descriptive name. The neighborhood is home to the Kyu-Furukawa Gardens, where a 1917 Western-style stone mansion designed by Josiah Conder (also the architect of the Rokumeikan) surveys a formal rose garden on the upper terrace and a classical Japanese stroll garden below — one of Tokyo\'s more surprising hidden gems.',
+    ward: '北区',
+  },
+  {
+    id: 'ukima',
+    kanji: '浮間',
+    romaji: 'Ukima',
+    english: 'Floating Interval',
+    type: 'neighborhood',
+    coordinates: [35.7782, 139.6883],
+    description:
+      '浮間 means "floating interval" or "floating space" — 浮 (to float, buoyant) + 間 (interval, space, between). The low-lying land here, prone to seasonal flooding from the Arakawa River, seemed to "float" between the river channels — the ground would disappear under water and re-emerge, as if floating. Today Ukima Park contains Ukima Pond (浮間ヶ池), a surprisingly large waterway that serves as a migratory bird sanctuary, drawing herons, ducks, and winter wildfowl. The area has a distinctly rural, non-urban atmosphere rare for a district within Tokyo proper.',
+    ward: '北区',
+  },
+  {
+    id: 'higashi-jujo',
+    kanji: '東十条',
+    romaji: 'Higashi-Jūjō',
+    english: 'East Tenth Ward',
+    type: 'neighborhood',
+    coordinates: [35.7593, 139.7288],
+    description:
+      '東十条 means "east tenth ward" — 東 (east) + 十条 (tenth ward: 十 = ten, 条 = strip, row, ward division). The Jūjō name derives from the ancient Chinese-style grid planning system (jōri-sei) used to organize agricultural land in the Nara period, in which land was divided into numbered strips (条). The "tenth strip" designation was applied to this area of the Musashino Plain. Higashi-Jūjō is the eastern extension of this district — a quiet, working-class residential pocket in northern Kita-ku between the JR lines and the Arakawa River.',
+    ward: '北区',
+  },
+
+  // ADACHI-KU
+  {
+    id: 'ayase',
+    kanji: '綾瀬',
+    romaji: 'Ayase',
+    english: 'Figured Silk Rapids',
+    type: 'neighborhood',
+    coordinates: [35.7668, 139.8226],
+    description:
+      '綾瀬 combines 綾 (ayaori, twill-woven figured silk fabric) + 瀬 (shallows, rapids of a river). The Ayase River flows nearby; its shallows reflected light in shifting patterns resembling the complex weave of figured silk (aya), earning the river and surrounding district this poetic name. The neighborhood is served by the Chiyoda subway line from central Tokyo and is one of northeastern Tokyo\'s main residential hubs. An ASKA Self-Defense Force base occupies a large portion of the ward\'s land here.',
+    ward: '足立区',
+  },
+
+  // KATSUSHIKA-KU
+  {
+    id: 'tateishi',
+    kanji: '立石',
+    romaji: 'Tateishi',
+    english: 'Standing Stone',
+    type: 'neighborhood',
+    coordinates: [35.7435, 139.8666],
+    description:
+      '立石 means "standing stone" — 立 (upright, standing) + 石 (stone). A large upright stone monument is said to have stood here as a landmark boundary marker or sacred stone in the pre-Edo period, visible across the flat Katsushika lowlands. The neighborhood is famous in contemporary Tokyo as one of the last surviving examples of an authentic, unpretentious drinking and eating culture: the cramped izakaya alley near the station (often called "Tokyo\'s most old-school bar street") packs in tiny grilling stalls, yakitori shops, and standing sake bars from late afternoon, drawing workers from across the metropolis who prize its unreconstructed atmosphere.',
+    ward: '葛飾区',
+  },
+
+  // EDOGAWA-KU
+  {
+    id: 'nishi-kasai',
+    kanji: '西葛西',
+    romaji: 'Nishi-Kasai',
+    english: 'West Kudzu West',
+    type: 'neighborhood',
+    coordinates: [35.6655, 139.874],
+    description:
+      '西葛西 means "West Kasai" — 西 (west) + 葛西 (Kasai: 葛 = kudzu vine, 西 = west, describing the western reed-and-vine marshlands of the old Edogawa lowlands). The wider Kasai district\'s own name comes from the Kasai clan, feudal lords of these eastern marshlands. Nishi-Kasai is notable as Tokyo\'s "Little India" — since the 1980s, a large Indian IT-professional community has settled here, drawn initially by affordable rents and good subway access to central offices. The neighborhood now boasts more Indian grocery stores, curry restaurants, sari shops, and Bollywood-themed establishments per square kilometer than any other Tokyo district.',
+    ward: '江戸川区',
+  },
+  {
+    id: 'komatsugawa',
+    kanji: '小松川',
+    romaji: 'Komatsugawa',
+    english: 'Small Pine River',
+    type: 'neighborhood',
+    coordinates: [35.69, 139.8595],
+    description:
+      '小松川 means "small pine river" — 小松 (small pine tree: 小 = small, 松 = pine) + 川 (river). Pine trees grew along the banks of the river running through this area of the Edogawa lowlands. The Komatsugawa district sits near the confluence of the old Nakariver and Komatsugawa River channels, and it was historically prone to catastrophic flooding from both the Edogawa and Arakawa rivers. Today extensive flood control infrastructure protects the area. The Edogawa ward sports complex and Komatsugawa Park are the main green spaces.',
+    ward: '江戸川区',
+  },
+  {
+    id: 'funabori',
+    kanji: '船堀',
+    romaji: 'Funabori',
+    english: 'Boat Canal',
+    type: 'neighborhood',
+    coordinates: [35.687, 139.8784],
+    description:
+      '船堀 means "boat canal" — 船 (boat) + 堀 (moat, canal, dug waterway). Canals (horibori) were dug through the flat eastern lowlands of Edo to enable boat transport of rice, timber, and goods through areas where natural rivers did not reach. This neighborhood\'s defining canal, once busied with flat-bottomed transport boats, gave it the name "boat moat." The Edo-era network of artificial waterways made reclaimed land habitable and productive. Today the area is a quiet residential district served by the Toei Shinjuku Line.',
+    ward: '江戸川区',
+  },
+
+  // NAKANO-KU
+  {
+    id: 'higashi-nakano',
+    kanji: '東中野',
+    romaji: 'Higashi-Nakano',
+    english: 'East Middle Field',
+    type: 'neighborhood',
+    coordinates: [35.7091, 139.6868],
+    description:
+      '東中野 means "east middle field" — 東 (east) + 中野 (Nakano: 中 = middle, 野 = field, plain). The eastern extension of the Nakano district, occupying the gentle slope between Shinjuku and the Nakano plateau. Higashi-Nakano retains a pleasantly unhurried neighborhood atmosphere, notable for its independent cinema (Pole Pole Higashi-Nakano, one of Tokyo\'s last single-screen documentary art cinemas) and the quiet streets running alongside the Kanda River. The contrast with the commercial noise of nearby Shinjuku is striking.',
+    ward: '中野区',
+  },
+  {
+    id: 'saginomiya',
+    kanji: '鷺宮',
+    romaji: 'Saginomiya',
+    english: 'Egret Shrine',
+    type: 'neighborhood',
+    coordinates: [35.7277, 139.654],
+    description:
+      '鷺宮 means "egret shrine" — 鷺 (sagi, great egret or grey heron) + 宮 (miya, shrine or palace). Great white egrets (shirasagi) gathered in large numbers at the Saginomiya Hachiman Shrine, nesting in the sacred grove of the shrine\'s forest. The elegant birds, considered auspicious in Japanese culture, gave the shrine and the surrounding neighborhood their evocative name. Today the area is a quiet, middle-class residential neighborhood in western Nakano with a small covered shopping street and the Seibu Shinjuku Line providing access to central Tokyo.',
+    ward: '中野区',
+  },
+
+  // SUGINAMI-KU
+  {
+    id: 'nishi-ogikubo',
+    kanji: '西荻窪',
+    romaji: 'Nishi-Ogikubo',
+    english: 'West Reed Hollow',
+    type: 'neighborhood',
+    coordinates: [35.7072, 139.5954],
+    description:
+      '西荻窪 means "West Ogikubo" — 西 (west) + 荻窪 (Ogikubo: 荻 = miscanthus/eulalia reed grass, 窪 = hollow, depression). The "west reed hollow" extends the naming logic of Ogikubo westward along the Chūō Line. While Koenji attracts music subculture and Ogikubo leans commercial, Nishi-Ogikubo has carved out a distinct identity as Tokyo\'s foremost neighborhood for antiques, vintage goods, and curiosities: dozens of antique dealers, thrift stores specializing in Shōwa-era tableware, old kimono fabrics, and rare books line the backstreets in an atmosphere somewhere between a permanent flea market and a curated collection.',
+    ward: '杉並区',
+  },
+  {
+    id: 'takaido',
+    kanji: '高井戸',
+    romaji: 'Takaidō',
+    english: 'High Well',
+    type: 'neighborhood',
+    coordinates: [35.6914, 139.6108],
+    description:
+      '高井戸 means "high well" — 高 (high, elevated) + 井戸 (well). A well positioned on elevated ground — unusual and therefore notable — was the defining feature of the settlement here. On elevated ground, wells required deeper digging and were more difficult to maintain, making a functioning high well a valuable community resource. Historically, Takaido was the first post station on the Kōshū Kaidō highway leaving Edo westward toward Kai Province (present-day Yamanashi). The area was also connected to the Tamagawa Josui aqueduct that supplied Edo with fresh water.',
+    ward: '杉並区',
+  },
+  {
+    id: 'eifukunocho',
+    kanji: '永福町',
+    romaji: 'Eifukuchō',
+    english: 'Eternal Fortune Town',
+    type: 'neighborhood',
+    coordinates: [35.6892, 139.6438],
+    description:
+      '永福町 means "eternal fortune town" — 永 (eternal, permanent) + 福 (happiness, good fortune, prosperity) + 町 (town). The auspicious name was given to the area by the local Eifuku-ji temple, whose name itself promised lasting good fortune. The Inokashira Line connects Eifukuchō directly to Shibuya in about 15 minutes, yet the neighborhood feels worlds removed: a local shopping street, a small shrine square, and the kind of unhurried daily life that makes it a favored residential choice for people who work in central Tokyo but want to sleep somewhere quiet.',
+    ward: '杉並区',
+  },
+
+  // NERIMA-KU
+  {
+    id: 'sakuradai',
+    kanji: '桜台',
+    romaji: 'Sakuradai',
+    english: 'Cherry Blossom Terrace',
+    type: 'neighborhood',
+    coordinates: [35.7393, 139.6399],
+    description:
+      '桜台 means "cherry blossom terrace" — 桜 (sakura, cherry blossom) + 台 (elevated ground, terrace, plateau). Cherry trees planted on this upland plateau gave the neighborhood its poetic name. A quiet residential neighborhood on the Seibu Ikebukuro Line west of Ikebukuro, Sakuradai retains the relaxed domestic character common to Nerima-ku: single-family houses, small apartment buildings, neighborhood parks, and local shopping streets where the pace of life is noticeably slower than in the commercial wards to the south and east.',
+    ward: '練馬区',
+  },
+  {
+    id: 'ekoda',
+    kanji: '江古田',
+    romaji: 'Ekoda',
+    english: 'Old River Paddy',
+    type: 'neighborhood',
+    coordinates: [35.7297, 139.6624],
+    description:
+      '江古田 combines 江 (river, inlet) + 古 (old, ancient) + 田 (rice paddy). "The ancient river rice paddy" — paddies that once lined the banks of an old watercourse here. The neighborhood is home to Musashino Art University, Nihon University College of Art, and several other arts and music schools, giving Ekoda a youthful, creative energy concentrated in the small alleyways and cheap izakaya near the Seibu Ikebukuro Line station. The collision of traditional working-class shopkeepers and art students produces the kind of unpretentious vitality increasingly rare in central Tokyo.',
+    ward: '練馬区',
+  },
+
+  // ITABASHI-KU
+  {
+    id: 'hasune',
+    kanji: '蓮根',
+    romaji: 'Hasune',
+    english: 'Lotus Root',
+    type: 'neighborhood',
+    coordinates: [35.7697, 139.6894],
+    description:
+      '蓮根 means "lotus root" — 蓮 (lotus, Nelumbo nucifera) + 根 (root). The marshy lowlands of old Itabashi were ideal conditions for lotus cultivation, and the root was grown as a food crop throughout the Edo and Meiji periods. Lotus root (renkon) was a prized ingredient in Japanese cooking — valued for its crunchy texture, distinctive hole pattern when sliced, and associations with Buddhist purity. The neighborhood is a quiet residential area on the Toei Mita Line, and a large lotus pond survives as a memorial in the local park.',
+    ward: '板橋区',
+  },
+  {
+    id: 'takashimadaira',
+    kanji: '高島平',
+    romaji: 'Takashimadaira',
+    english: 'Takashima Plain',
+    type: 'neighborhood',
+    coordinates: [35.7802, 139.6752],
+    description:
+      '高島平 means "Takashima Plain" — 高島 (Takashima: 高 = high, 島 = island, but here a proper name) + 平 (flat plain). The name honors Takashima Shūhan (1798–1866), a scholar of Dutch Studies and military reformer who owned land here and famously demonstrated Western-style artillery techniques on this flat plain in 1841, confronting conservative Tokugawa officials who feared modernization. His demonstration — and the political drama that followed — was a turning point in Japan\'s gradual adoption of Western military technology. The neighborhood became one of postwar Japan\'s largest public housing (danchi) complexes in the 1970s, and the long rows of identical concrete apartment blocks became an iconic image of Shōwa-era urban planning.',
+    ward: '板橋区',
+  },
 ];
 
 export default places;
